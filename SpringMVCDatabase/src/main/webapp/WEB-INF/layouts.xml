@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ <!DOCTYPE tiles-definitions PUBLIC  
+        "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"  
+        "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+
+    <definition name="defaultTemplate" template="/WEB-INF/jsp/template/SiteTemplate.jsp">
+		<put-attribute name="title" 	value="Home" />
+		<put-attribute name="header" 	value="/WEB-INF/jsp/template/header.jsp" />
+		<put-attribute name="menu" 		value="/WEB-INF/jsp/template/menu.jsp" />
+		<put-attribute name="body" 		value="/WEB-INF/jsp/template/index.jsp" />
+		<put-attribute name="footer" 	value="/WEB-INF/jsp/template/footer.jsp" />
+	</definition>
+
+
+	<!-- PostBlog -->
+	<definition name="welcome" extends="defaultTemplate">
+		<put-attribute name="body"	value="/WEB-INF/jsp/welcome.jsp" />
+	</definition>
+
+	<!-- login Page -->
+	<definition name="index" extends="defaultTemplate">
+		<put-attribute name="body"	value="/WEB-INF/jsp/template/indexview.jsp" />
+	</definition>
+
+
+	<!-- registration -->
+	<definition name="registration" extends="defaultTemplate">
+		<put-attribute name="body"	value="/WEB-INF/jsp/registration.jsp" />
+	</definition>
+
+
+	<!-- Blog -->
+	<definition name="Blog" extends="defaultTemplate">
+		<put-attribute name="body"	value="/WEB-INF/jsp/Blog.jsp" />
+	</definition>
+
+	<!-- PostBlog -->
+	<definition name="postblog" extends="defaultTemplate">
+		<put-attribute name="body"	value="/WEB-INF/jsp/postblog.jsp" />
+	</definition>
+
+
+</tiles-definitions>
